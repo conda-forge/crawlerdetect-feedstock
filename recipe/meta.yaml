@@ -6,7 +6,7 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/crawlerdetect-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/crawlerdetect-{{ version }}.tar.gz
   sha256: a269289943f6b2a8f33ed5b9a09591b6dae0e45c0c19a0d9c5ef07f5c518575c
 
 build:
@@ -17,10 +17,10 @@ build:
 requirements:
   host:
     - poetry-core
-    - python >=3.4,<4.0
+    - python {{ python_min }}
     - pip
   run:
-    - python >=3.4,<4.0
+    - python >={{ python_min }}
 
 test:
   imports:
@@ -29,6 +29,7 @@ test:
     - pip check
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   home: https://github.com/moskrc/CrawlerDetect
