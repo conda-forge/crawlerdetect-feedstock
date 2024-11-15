@@ -1,5 +1,5 @@
 {% set name = "crawlerdetect" %}
-{% set version = "0.1.7" %}
+{% set version = "0.2.6" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/crawlerdetect-{{ version }}.tar.gz
-  sha256: 28837b434250bc4647b8b1056ab9a5bdd7133072c029b59987a3faadadb21b04
+  sha256: 7486e5b4b28694cd6fe9d55bfb74d36d7b3875e0e3ec4829c3f2a92c36abac8e
 
 build:
   noarch: python
