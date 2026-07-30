@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: crawlerdetect
-  version: 0.3.2
+  version: "0.4.2"
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/crawlerdetect-${{ version }}.tar.gz
-  sha256: 1c2f9ccbb786c756c4f5bce62503ac0792b88b0291df6dbd5633f3e9c8a7f432
+  sha256: 2ecbc825ec9bbfe94d1878078fbc3d336ed4b247a00dd56691479554ca3cb2ef
 
 build:
   number: 0
