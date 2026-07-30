@@ -22,7 +22,7 @@ build:
 
 requirements:
   host:
-    - poetry-core
+    - hatchling
     - python ${{ python_min }}.*
     - pip
   run:
@@ -33,7 +33,9 @@ tests:
       imports:
         - crawlerdetect
       pip_check: true
-      python_version: ${{ python_min }}.*
+      python_version:
+        - ${{ python_min }}.*
+        - "*"
   - requirements:
       run:
         - python ${{ python_min }}.*
